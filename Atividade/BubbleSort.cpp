@@ -20,10 +20,10 @@ void bubbleSort(int vetor[], int n)
             }
         }
     }
-    cout << "Numero de trocas => " << trocas << endl;
+    cout << "Numero de trocas Bubble Sort => " << trocas << endl;
 }
 
-void printVetor(int vetor[], int n)
+void printBubbleSort(int vetor[], int n)
 {
     for(int i = 0; i < n; i++){
         cout << vetor[i] << " ";
