@@ -21,6 +21,7 @@ void insertSort(int vetor[], int n)
         }
         vetor[j + 1] = key;
     }
+    cout << "Numero de trocas Insertion Sort => " << trocas << endl;
 }
 
 void printInsertionSort(int vetor[], int n)

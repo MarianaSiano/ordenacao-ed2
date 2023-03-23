@@ -3,6 +3,7 @@
 
 #include "BubbleSort.h"
 #include "SelectionSort.h"
+#include "InsertionSort.h"
 
 using namespace std;
 
@@ -37,6 +38,16 @@ int main()
     printSelectSort(vetor, n);
 
     cout << "Terminou o Selection Sort" << endl;
+    cout << endl;
+
+    cout << "Insertion Sort" << endl;
+    cout << endl;
+
+    insertSort(vetor, n);
+    printInsertionSort(vetor, n);
+
+    cout << endl;
+    cout << "Terminou o Insertion Sort" << endl;
     cout << endl;
 
     return 0;
