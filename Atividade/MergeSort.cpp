@@ -6,6 +6,9 @@ using namespace std;
 
 void merge(int vetor[], int const esq, int const meio, int const dir)
 {
+    int troca;
+    troca = 0;
+
     auto const subVetorEsq = meio - esq + 1;
     auto const subVetorDir = dir - meio;
 
@@ -32,19 +35,24 @@ void merge(int vetor[], int const esq, int const meio, int const dir)
             indiceDir++;
         }
         indiceVetor++;
+        troca++;
     }
 
     while (indiceEsq < subVetorEsq) {
         vetor[indiceVetor] = vetorEsq[indiceEsq];
         indiceEsq++;
         indiceVetor++;
+        troca++;
     }
 
     while (indiceDir < subVetorDir) {
         vetor[indiceVetor] = vetorDir[indiceDir];
         indiceDir++;
         indiceVetor++;
+        troca++;
     }
+
+    cout << "Trocas Merge Sort => " << troca << endl;
 
     delete[] vetorEsq;
     delete[] vetorDir;

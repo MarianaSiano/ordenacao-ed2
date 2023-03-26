@@ -51,5 +51,15 @@ int main()
     cout << "Terminou o Insertion Sort" << endl;
     cout << endl;
 
+    cout << "Merge Sort" << endl;
+    cout << endl;
+
+    mergeSort(vetor, 0, n-1);
+    printMergeSort(vetor, n);
+
+    cout << endl;
+    cout << "Terminou o Merge Sort" << endl;
+    cout << endl;
+
     return 0;
 }
