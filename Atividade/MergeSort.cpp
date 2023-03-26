@@ -47,3 +47,14 @@ void merge(int vetor[], int const esq, int const meio, int const dir)
     delete[] vetorEsq;
     delete[] vetorDir;
 }
+
+void mergeSort(int vetor[], int const comeco, int const fim)
+{  
+    if (comeco >= fim)
+        return; // retorna recursivamente
+
+    auto meio = comeco + (fim - comeco) / 2;
+    mergeSort(vetor, comeco, meio);
+    mergeSort(vetor, meio + 1, fim);
+    merge(vetor, comeco, meio, fim);
+}
