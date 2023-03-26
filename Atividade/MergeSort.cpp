@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "MergeSort.h"
+
 using namespace std;
 
 void merge(int vetor[], int const esq, int const meio, int const dir)
@@ -57,4 +59,12 @@ void mergeSort(int vetor[], int const comeco, int const fim)
     mergeSort(vetor, comeco, meio);
     mergeSort(vetor, meio + 1, fim);
     merge(vetor, comeco, meio, fim);
+}
+
+void printMergeSort(int vetor[], int tam)
+{
+    for (auto i = 0; i < tam; i++){
+        cout << vetor[i] << " ";
+    }
+    cout << endl;
 }
